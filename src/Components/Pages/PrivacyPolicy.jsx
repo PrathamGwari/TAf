@@ -2,22 +2,23 @@ import React from 'react'
 import Logo from '../../static/Icons/TAf Logo.png'
 import Banner from '../../static/Images/bgBanner.png'
 import BackIcon from '../../static/Icons/BackIcon.png'
+import './PrivacyPolicy.css'
 
 function PrivacyPolicy() {
   return (
-    <div className='d-flex flex-column align-items-center px-5'>
+    <div className='d-flex flex-column align-items-center px-md-5'>
         <div className="d-flex flex-column align-items-center justify-content-center my-3">
-            <img src={Logo} style={{width: "5rem"}} alt="" />
+            <img className='logo' src={Logo} alt="" />
             <div className="fs-4">TAfCreate</div>
         </div>
 
-        <div className="policy-container border-3 bg-light rounded-3" style={{paddingRight: "2.5rem", width: "70%", zIndex:"1", boxShadow: "3px 2px 3px gray"}}>
+        <div className="policy-container border-3 bg-light rounded-3">
             <div className='d-flex flex-column align-items-center justify-content-center pt-4'>
                 <div className="display-6 fw-bolder">Privacy Policy</div>
-                <div className='fw-bolder' style={{fontSize: ".7rem", color: "#636363"}}>Updated on 9th August</div>
+                <div className='fw-bolder' style={{fontSize: ".7rem", color: "#636363"}}>Updated on August 9</div>
             </div>
 
-            <div className='policy py-3 px-5' style={{maxHeight: "55vh", overflowY: "scroll"}}>
+            <div className='policy py-3 px-5' style={{overflowY: "scroll"}}>
                 <div className='terms-of-use mb-4'>
                     <div style={{fontSize: "2rem", fontWeight:500, color: "#4CB2A2"}}>Terms Of Use</div>
                     <ul style={{fontSize: ".6rem", color: "#8B8B8B"}}>
@@ -52,7 +53,7 @@ function PrivacyPolicy() {
 
         <div style={{height: "50vh", maxWidth:"100vw", position: "absolute", overflow: "hidden", zIndex:"-1000"}}>
             <div className='' style={{backgroundColor: "black"}}>
-                <img src={BackIcon} width="4.5%" alt="" />
+                <img className='back-icon' src={BackIcon} width="4.5%" alt="" />
             </div>
             <img src={Banner} width="100%" alt="" />
         </div>

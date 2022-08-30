@@ -1,0 +1,35 @@
+.policy-container {
+    padding-right: 2.5rem;
+    width: 70%;
+    z-index: 1;
+    box-shadow: 3px 2px 3px gray;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.policy {
+    max-height: 55vh;
+}
+
+.back-icon {
+    width: 4.5%;
+}
+
+@media all and (max-width: 800px) {
+    .policy-container {
+        padding-right: .5rem;
+        width: 90%;
+        z-index: 1;
+    }
+    .logo {
+        width: 4.5rem;
+    }
+    .policy {
+        max-height: 70vh;
+    }
+    .back-icon {
+        width: 10.5%;
+    }
+}
